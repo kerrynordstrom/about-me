@@ -12,38 +12,27 @@ h1 {
 }
 
 .front-center-header {
-  border: solid black 1px;
   float: left;
   padding-left: 1em;
-  padding-left: 1em;
+  padding-right: 1em;
   position: relative;
   display:inline-block;
-
-
 }
 
 .outer-box {
   padding-left: 2em;
-  border: solid red 1px;
-
 }
 
 .column {
-
-  border: solid green 1px;
   display: inline-block;
   float: left;
   padding-left: 1em;
   padding-right: 1em;
-
 }
-
-
 
 .img-thumbnail {
   width: 100%
   padding (10, 10, 10, 10);
-
 }
 
 #image1 {
@@ -52,10 +41,8 @@ h1 {
 
 #image2 {
   float: inherit;
-
 }
 
 #image3 {
   float: right;
-
 }
