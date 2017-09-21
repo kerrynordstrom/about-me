@@ -1,14 +1,12 @@
 * {
 background-color: skyblue;
 }
-body {
-  margin: 0;
-}
+/*body {
+  margin: 0px;
+}*/
 
 h1 {
-  float: left;
-  padding-left: 20em;
-  padding-right: 20em;
+ margin: 0px, auto;
 }
 
 .front-center-header {
@@ -35,14 +33,17 @@ h1 {
   padding (10, 10, 10, 10);
 }
 
-#image1 {
+/*#image1 {
   float: left;
+
 }
 
 #image2 {
   float: inherit;
+
 }
 
 #image3 {
   float: right;
-}
+
+}*/
