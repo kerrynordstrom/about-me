@@ -7,23 +7,22 @@
 // Add, Commit, Push process is being followed; it is evident in GitHub that commits are made regularly, and with good commit messages that explain the WHY of the commit. */
 //
 var totalCount = 0;
-var userName = prompt('What is your name?');
+var userName = prompt('Welcome, what is your name?');
 
 alert('Hello, ' + userName + ' nice to meet you!');
 
 // Did I live in Colorado?
 function whatState() {
-  var currentStateResidence = prompt('Do I live in Colorado?').toUpperCase();
-  console.log('Response to currentStateResidence is: ' + currentStateResidence);
+  var pastYearStateResidence = prompt('Did I live in Colorado within the past year?').toUpperCase();
+  console.log('Response to pastYearStateResidence is: ' + pastYearStateResidence);
 
-  if (currentStateResidence === 'N' || currentStateResidence === 'NO') {
+  if (pastYearStateResidence === 'N' || pastYearStateResidence === 'NO') {
     //Tell user they got the correct answer.
-    alert('That\'s right, I live in Seattle!');
+    alert('That\'s right, I\'ve lived in Seattle for 3 years now!');
     totalCount++;
   } else {
     //Tell user they got the wrong answer.
-    alert('Nope, but I would live there again in a heartbeat!');
-    // totalCount--;
+    alert('Nope, it\'s been 3 years but I\'d move back there in a heartbeat!');
   }
 }
 
@@ -33,12 +32,11 @@ function whatElevation() {
 
   if (highestElevationRidden === 'Y' || highestElevationRidden === 'YES') {
     //Tell user they got the correct answer.
-    alert('Soooo tough to breathe.');
+    alert('Technically I pushed my bike at this elevation ;-).');
     totalCount++;
   } else {
     //Tell user they got the wrong answer.
-    alert('Well, technically I pushed my bike past that elevation. ;-) ');
-    // totalCount--;
+    alert('I have, actually. Soo hard to breathe!');
   }
 }
 
@@ -52,7 +50,6 @@ function whatCountry() {
     totalCount++;
   } else {
     alert('I\'ve actually been a few times.');
-    // totalCount--;
   }
 }
 
@@ -67,22 +64,20 @@ function whatCar() {
   } else {
     //Tell user they got the wrong answer.
     alert('Nope, but the new Ford Focus hatchbacks are pretty rad!');
-    // totalCount--;
   }
 }
 
 function whatCity() {
-  var futureCityResidence = prompt('Will I move to Los Angeles in the next three years?').toUpperCase();
+  var futureCityResidence = prompt('Will I move to Los Angeles in the next three years? Y/N').toUpperCase();
   console.log('Response to futureCityResidence is: ' + futureCityResidence);
 
   if (futureCityResidence === 'Y' || futureCityResidence === 'YES') {
     //Tell user they got the correct answer.
-    alert('Fingers crossed.');
+    alert('Fingers are crossed that I make it out there.');
     totalCount++;
   } else {
     //Tell user they got the wrong answer.
     alert('Yeah, you\'re probably right.  I should stick around the PNW.');
-    // totalCount--;
   }
 }
 
@@ -102,12 +97,10 @@ function guessGame() {
     //Tell user they got they're too low.
       alert('Sorry, try again you\'re too low! ' + '\n' + 'You have ' + guessesLeft + ' of four tries.');
       console.log('Response to bikesOwned is: ' + numberGuess + ' and was too low.');
-      // totalCount--;
     } else {
       //Tell user they got they're too high.
       alert('Sorry, try again you\'re too high! ' + '\n' + 'You\'ve used all four of your tries.');
       console.log('Response to bikesOwned is: ' + numberGuess + ' and was too high.');
-      // totalCount--;
     }
   }
   while (guessesLeft > 0 && numberGuess !== bikesOwned);
@@ -135,7 +128,6 @@ function statesLived() {
     if (guessesLeft > 0) {
       alert('Sorry try again, ' + statesGuess + ' is incorrect. You have ' + guessesLeft + ' remaining.');
       console.log('State guess is ' + statesGuess + ' and is incorrect.');
-      // totalCount--;
     }
     if (guessesLeft === 0) {
       alert('Sorry, you\'re out of guesses!  The states I\'ve lived in are Colorado, Ohio, and Pennsylvania.');
@@ -152,4 +144,4 @@ whatCar();
 guessGame();
 statesLived();
 
-alert(totalCount);
+alert('Hey! You got ' + totalCount + ' of 7 questions correct!');
