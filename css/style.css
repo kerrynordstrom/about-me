@@ -1,28 +1,62 @@
 * {
 background-color: skyblue;
 }
-/*body {
+body {
   margin: 0px;
-}*/
+}
 
 h1 {
- margin: 0px, auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+
+}
+
+h2 {
+  margin: 200px;
+
 }
 
 .front-center-header {
-  float: left;
-  padding-left: 1em;
-  padding-right: 1em;
-  position: relative;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: 50px;
+  padding: 10px;
+  width: 100%;
+}
+
+
+.navlinks {
   display:inline-block;
+
+
+
 }
 
 .outer-box {
   padding-left: 2em;
 }
 
-.column {
-  display: inline-block;
+#column1 {
+  width: 300px;
+  float: left;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#column2 {
+  width:300px;
+  float: left;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#column3 {
+  width: 300px;
   float: left;
   padding-left: 1em;
   padding-right: 1em;
@@ -33,17 +67,20 @@ h1 {
   padding (10, 10, 10, 10);
 }
 
-/*#image1 {
-  float: left;
+#image1 {
+  width: auto;
+  height: 250px;
 
 }
 
 #image2 {
-  float: inherit;
+  width: auto;
+  height: 250px;
 
 }
 
 #image3 {
-  float: right;
+  width: auto;
+  height: 250px;
 
-}*/
+}
