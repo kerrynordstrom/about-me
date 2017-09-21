@@ -78,36 +78,36 @@ if (futureCityResidence === 'Y' || futureCityResidence === 'YES') {
   }
 
 var bikesOwned = 4;
-var counter = 0;
+var guessesLeft = 4;
 
 do {
-  counter ++ ;
+  guessesLeft--;
   var numberGuess = parseInt(prompt('How many bikes do I own?'));
+
 if (numberGuess === bikesOwned) {
   alert('Yep, you\'re right, the number is 3 too many! Want to buy a bike?');
   console.log('Response to bikesOwned is: ' + numberGuess + ' and is correct!');
   totalCount++;
-}
-else if (numberGuess < bikesOwned) {
+} else if (numberGuess < bikesOwned) {
 //Tell user they got they're too low.
-  alert('Sorry, try again you\'re too low! ' + '\n' + 'You\'ve used ' + counter + ' of four tries.');
+  alert('Sorry, try again you\'re too low! ' + '\n' + 'You have ' + guessesLeft + ' of four tries.');
   console.log('Response to bikesOwned is: ' + numberGuess + ' and was too low.');
   totalCount--;
 } else  {
   //Tell user they got they're too high.
-  alert('Sorry, try again you\'re too high! ' + '\n' + 'You\'ve used ' + counter + ' of four tries.');
+  alert('Sorry, try again you\'re too high! ' + '\n' + 'You\'ve used all four of your tries.');
   console.log('Response to bikesOwned is: ' + numberGuess + ' and was too high.');
   totalCount--;
   }
 }
-while (counter < 4 && numberGuess !== bikesOwned);
+while (guessesLeft > 0 && numberGuess !== bikesOwned);
 
 
-var counter = 0;
+var guessesLeft = 6;
 var statesLivedIn = ['colorado', 'ohio', 'pennsylvania'];
 var statesGuess = prompt('Can you guess a state I\'ve lived in?').toLowerCase();
 
-while (counter <= 5) {
+while (guessesLeft > 0) {
 
 for (i = 0; i <= statesLivedIn.length; i++) {
 
@@ -115,18 +115,22 @@ for (i = 0; i <= statesLivedIn.length; i++) {
     alert('Yes that\'s correct');
     console.log('State guess is ' + statesGuess);
     totalCount++;
-    counter === 5;
+    guessesLeft = -1;
     break;
     }
 
-   else { (statesGuess !== statesLivedIn[i])
-    statesGuess = prompt('Sorry try again, ' + statesGuess + ' is incorrect.').toLowerCase();
-    console.log('State guess is ' + statesGuess + ' and is incorrect.');
-    totalCount--;
+  if (guessesLeft > 0) {
+      alert('Sorry try again, ' + statesGuess + ' is incorrect. You have ' + guessesLeft + ' remaining.');
+      console.log('State guess is ' + statesGuess + ' and is incorrect.');
+      totalCount--;
+    }
+  if (guessesLeft = 0) {
+      alert('Sorry, you\'re out of guesses!  The states I\'ve lived in are Colorado, Ohio, and Pennsylvania.');
+      console.log('The user guessed their last guess.');
     }
 
 }
-counter++
+
   };
 
 alert(totalCount);
