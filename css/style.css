@@ -41,13 +41,14 @@ h2 {
   padding-left: 2em;
 }
 
-#column1 {
+#column1 #column2 #column3 {
   width: 300px;
-  float: left;
-  padding-left: 1em;
-  padding-right: 1em;
+  /*float: left;*/
+  position: inline
+  /*padding-left: 1em;
+  padding-right: 1em;*/
 }
-
+/*
 #column2 {
   width:300px;
   float: left;
@@ -60,27 +61,14 @@ h2 {
   float: left;
   padding-left: 1em;
   padding-right: 1em;
-}
+}*/
 
 .img-thumbnail {
   width: 100%
   padding (10, 10, 10, 10);
 }
 
-#image1 {
+#image1 #image2 #image3 {
   width: auto;
   height: 250px;
-
-}
-
-#image2 {
-  width: auto;
-  height: 250px;
-
-}
-
-#image3 {
-  width: auto;
-  height: 250px;
-
 }
