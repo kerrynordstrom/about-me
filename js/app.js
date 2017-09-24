@@ -1,4 +1,8 @@
 'use strict';
+// As a prospective job seeker, I want to have five yes/no questions in my "about me" guessing game so that I have enough questions to cover a variety of things about me.
+// As a developer, I want to add a sixth question to my guessing game that takes numeric input by prompting a user to guess a number (for instance, "What is my favorite number?" or "How many Pokémon did I catch yesterday?"), and indicates to the user whether the guess is 'too high' or 'too low', and gives the user exactly four opportunities to get the correct answer, so that my fancy programming skills are showcased.
+// As a developer, I want to add a seventh question to my guessing game that has multiple possible correct answers that are stored in an array. For instance, "Can you guess a state that I have lived in besides Washington?", so that even more of my programming skills are showcased. For now, I will structure this question so that the user has six tries to get a single correct answer, and upon using up those tries OR getting a correct answer, displays a message to the user indicating all of the possible correct answers.
+// As a developer, I want to keep a tally of the total number of correct answers given by the user, and at the end of the game, tell the user how well they did with a personalized custom message that includes the number of correct answers and also addresses the user by name, e.g. "You got 4 out of 7 questions correct, Bobbi! Better luck next time."
 //
 // /* Design a guessing game about you that involves FIVE yes/no questions. Be creative and fun and whimsical. Or not. It's up to you! It's your project!
 // The questions in the guessing game must require a mix of yes/no answers, and user input must accept either y/n or yes/no responses, with either .toUpperCase() or .toUpperCase() used to validate the user input and accommodate users entering all-caps Y/N or YES/NO answers, too.
@@ -94,7 +98,7 @@ function guessGame() {
       console.log('Response to bikesOwned is: ' + numberGuess + ' and is correct!');
       totalCount++;
     } else if (numberGuess < bikesOwned) {
-    //Tell user they got they're too low.
+      //Tell user they got they're too low.
       alert('Sorry, try again you\'re too low! ' + '\n' + 'You have ' + guessesLeft + ' of four tries.');
       console.log('Response to bikesOwned is: ' + numberGuess + ' and was too low.');
     } else {

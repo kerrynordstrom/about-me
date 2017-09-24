@@ -2,8 +2,6 @@
    "settings": {
     "ecmascript": 5
   },
-  "ecmaFeatures": {
-  },
   "env": {
     "browser": true,
     "jquery": true

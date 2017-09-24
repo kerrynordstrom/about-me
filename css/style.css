@@ -1,11 +1,18 @@
+/*As a prospective job seeker, I want to make myself more personable by adding a Top Ten list to the bottom of my About Me page with an ordered list in HTML, for instance, my Top Ten Favorite Movies or my Top Ten Places I Want to Visit, or something along those lines.
+As a prospective job seeker, I was to use CSS to creatively and tastefully style and layout my page.*/
+
+
 * {
-background-color: skyblue;
-}
-body {
+  font-family: fantasy;
   margin: 0px;
 }
 
-h1 {
+body {
+
+
+}
+
+ {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -16,52 +23,72 @@ h1 {
 }
 
 h2 {
-  margin: 200px;
 
 }
 
 .front-center-header {
+  background-color: rgb(62, 224, 197);
+  color: gray;
+  box-shadow: 2px 2px 8 px rgba(0, 0, 0, 0.7);
   position: fixed;
-  top: 0px;
-  left: 0px;
-  margin: 50px;
-  padding: 10px;
   width: 100%;
+  height: 50px;
 }
 
 
-.navlinks {
+.nav-bar li {
+  padding: 15px 30px 0px 15px;
   display:inline-block;
+  float: right;
+  height: 35px;
+  background-color: black;
+}
 
+.nav-bar li:hover {
+  background-color: gold;
+
+}
+
+.nav-title {
+  float: left;
+  text-align: left;
+  width: 40%;
+  padding: 5px 0px 10px 15px;
+}
+
+#user-story {
+  padding-top: 120px;
+}
+
+#about-me-and-history {
 
 
 }
 
-.outer-box {
+.photo-box {
   padding-left: 2em;
-}
 
-#column1 #column2 #column3 {
+
+#col1 {
   width: 300px;
-  /*float: left;*/
+  float: left;
   position: inline
-  /*padding-left: 1em;
-  padding-right: 1em;*/
-}
-/*
-#column2 {
+  padding-left: 1em;
+  padding-right: 1em;
+
+#col2 {
   width:300px;
   float: left;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-#column3 {
+#col3 {
   width: 300px;
   float: left;
   padding-left: 1em;
   padding-right: 1em;
-}*/
+}
 
 .img-thumbnail {
   width: 100%
@@ -71,4 +98,5 @@ h2 {
 #image1 #image2 #image3 {
   width: auto;
   height: 250px;
+  resize: 50%;
 }
